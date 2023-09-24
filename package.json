@@ -1,0 +1,27 @@
+{
+  "name": "voyage44",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r    <h1>Team Forward</h1>\r </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-install": "npm install --prefix server",
+    "server": "cd server && node server.js",
+    "client-install": "npm install graphql --prefix client && npm install --prefix client",
+    "client": "npm start --prefix client",
+    "client-build": "npm run build --prefix client",
+    "build": "npm run server-install && npm run client-install && npm run client-build",
+    "dev": "concurrently \"cd client && npm start\" \"cd server && nodemon server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyages/V44-TeamForward.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-voyages/V44-TeamForward/issues"
+  },
+  "homepage": "https://github.com/chingu-voyages/V44-TeamForward#readme"
+}
